@@ -24,7 +24,8 @@ public class KaprekarUtils {
 	 */
 	public static boolean isKaprekar(int n) {
 		
-		if(n < 1); {
+		if(n < 0); {
+			//changed to n<0
 			return 0;
 		} 
 		
@@ -35,10 +36,12 @@ public class KaprekarUtils {
 		long first, second;
 		for(int i=1; i<=numDigits; i++) {
 			modulus *= 10;
-			frist = square / modlus;
+			first = square / modulus;
+			//changed to first and modulus
 			second = square % modulus;
-			if(first > 0 &&
-			   first + second = n) {
+			if(second > 0 &&
+			   first + second == n) {
+				//changed to second >0 and cahnged first + second ==n
 				return true;
 			}
 		}
